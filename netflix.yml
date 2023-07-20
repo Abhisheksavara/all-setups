@@ -1,5 +1,8 @@
 - hosts: test
   tasks:
+    - name: installing git
+      yum: name=git state=present
+      
     - name: installing apache server
       yum: name=httpd state=present
 
